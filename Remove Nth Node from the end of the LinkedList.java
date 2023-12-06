@@ -1,3 +1,4 @@
+// leetcode 19
 class Node{
     int data;
     Node next;
