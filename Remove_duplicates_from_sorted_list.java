@@ -26,12 +26,13 @@ class LinkedList{
         
     }
     public Node deleteDuplicates() {
-        if(head == null){
+        if(head == null){//This is use if LL is null then return null
             return null;
         }
-        if(head.next == null){
+        if(head.next == null){//If LL have single Node
             return head; 
         }
+        // This is valid for all test case's
         Node slow = head;
         Node fast = head.next;
         while(fast != null){
@@ -50,6 +51,7 @@ class LinkedList{
 class Main{
     public static void main(String[] args){
         LinkedList list = new LinkedList();
+        // Note:- Allways LL is sorted order
         list.add(3);
         list.add(3);
         list.add(2);
