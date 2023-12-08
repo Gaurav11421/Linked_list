@@ -60,7 +60,7 @@ class LinkedList{
             System.out.println("Error");
             return;
         }
-        // if we want to inset at last position we simply call fun addLast().
+        // if we want to insert at last position we simply call fun addLast().
         if(idx == size){
             addLast(data);
             return;
